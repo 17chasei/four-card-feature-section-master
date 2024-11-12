@@ -186,3 +186,44 @@ footer {
     padding-top: 25px;
     text-align: center;
 }
+
+/* Media queries */
+@media (min-width: 615px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1.5fr 1.5fr;
+        justify-items: center;
+        gap: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+    .supervisor-container {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .team-builder-container {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .karma-container {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .calculator-container {
+        grid-column: 3;
+        grid-row: 1 / span 2;
+    }
+
+    .supervisor-card,
+    .team-builder-card,
+    .karma-card,
+    .calculator-card {
+        max-width: 400px;
+        width: 100%;
+    }
+}
